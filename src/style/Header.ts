@@ -7,7 +7,7 @@ const flexCenter = `
 `;
 
 const commonStyles = `
-  color: white;
+  color: rgba(253, 253, 255, .75);
   cursor: pointer;
 
   &:hover {
@@ -23,13 +23,18 @@ export const Header_Wrapper = styled.div`
   width: 100%;
   max-width: 100%;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   background-color: rgba(0,0,0, .3);
-  /* background-color: hsla(0, 0%, 100%, .2); */
   ${flexCenter}
   justify-content: center;
   padding: 24px;
   box-sizing: border-box;
   z-index: 1;
+  /* isolation: isolate; */
+
+  .blurback {
+    background-color: hsla(0, 0%, 100%, .2);
+  }
 `;
 
 // 헤더Nav
@@ -39,9 +44,8 @@ export const Nav = styled.div`
   width: 100%;
   max-width: 1000px;
   gap: 26px;
-  
+  background-color: transparent;
   box-sizing: border-box; 
-
 `;
 
 //로고이미지
@@ -63,11 +67,11 @@ export const Logo = styled.div`
 export const MenuItem = styled.div`
   font-size: 17px;
   font-weight: 600;
-  color: white;
   ${commonStyles}
 
   &.other {
-    color: rgba(232,232,253, .36);
+    color: rgba(0, 25, 54, .31);
+    font-weight: 500;
   }
 `;
 

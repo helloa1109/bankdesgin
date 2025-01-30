@@ -11,7 +11,7 @@ const Section1 = () => {
                 </Section1_Text>   
             </Section1_Text_Wrapper>
             <CoinWrappr>
-                <span>텍스트를 테스트</span>
+                {/* <span>텍스트를 테스트</span> */}
             </CoinWrappr>
         </Section1_Wrapper>
     );

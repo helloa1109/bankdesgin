@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import coin from "../img/coin.png";
+
 export const Section1_Wrapper = styled.div`
     background-color: black;
     width: 100%;
@@ -9,19 +9,15 @@ export const Section1_Wrapper = styled.div`
     padding: 120px 24px 160px;
     overflow: hidden;
     margin-top: -68px;
-    box-sizing: border-box;
-    border: 1px solid red;
 `;
 
 export const Section1_Text_Wrapper = styled.div`
     display: flex;
-    flex-direction: column;
     gap: 0px;
     justify-content: center;
     align-items: center;
     padding-top: 140px;
     text-align: center;
-    /* border: 1px solid yellow; */
 `;
 
 export const Section1_Text = styled.div`
@@ -30,11 +26,10 @@ export const Section1_Text = styled.div`
     gap: 0px;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
 
     span {
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold; 
     line-height: 1.3;
   }
@@ -49,17 +44,12 @@ export const Section1_Text = styled.div`
 `;
 
 export const CoinWrappr = styled.div`
-  /* position: absolute; */
-  left: 0;
-  right: 0;
-  bottom: 0; /* 하단에 배치 */
-  display: block;
-  object-fit: contain;
-  z-index: 1; /* z-index 조정 */
+  position: relative;
+  display: flex;
+  flex: 1;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  border: 1px solid blue;
-  overflow: hidden;
 
   span {
     color: white;
