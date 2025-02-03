@@ -24,7 +24,7 @@ const Section2 = () => {
                                 <WW />
                             </ImageContainer>
                             <TextContainer>
-                                <span>국내주식, 해외주식</span>
+                                <span className='Text2'>국내주식, 해외주식</span>
                                 <span>하나의 앱으로 해외주식도 국내주식처럼<br />같으 경험으로 투자해요</span>
                             </TextContainer>
                         </ItemBox>

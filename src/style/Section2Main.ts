@@ -129,6 +129,10 @@ export const TextContainer = styled.div`
     color: #031228B3;
   }
 
+  .Text2{
+    
+  }
+
   /* &:nth-child(2) span {
     color: white;
   }
