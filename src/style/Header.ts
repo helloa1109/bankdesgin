@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled , { css }from 'styled-components';
 import background from "../img/toss.png";
 
 const flexCenter = `
@@ -6,13 +6,9 @@ const flexCenter = `
   align-items: center;
 `;
 
-const commonStyles = `
+const commonStyles =`
   color: rgba(253, 253, 255, .75);
   cursor: pointer;
-
-  &:hover {
-    color: #3182f6;
-  }
 `;
 
 // 헤더메인
@@ -70,8 +66,12 @@ export const MenuItem = styled.div`
   ${commonStyles}
 
   &.other {
-    color: rgba(0, 25, 54, .31);
+    color: white;
     font-weight: 500;
+  }
+
+  &:hover {
+    color: ${props => props.theme.colors.Blue500};
   }
 `;
 
@@ -89,7 +89,7 @@ export const RightWrapper = styled.div`
 export const InvestBtn = styled.button`
   font-size: 16px;
   font-weight: 600;
-  background-color: #3182f6;
+  background-color: ${props => props.theme.colors.Blue500};
   border: none;
   border-radius: 100px;
   color: white;
@@ -103,7 +103,7 @@ export const InvestBtn = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #2272eb;
+    background-color: ${props => props.theme.colors.Blue600};
     transition-duration: 0ms.15s;
     transition-timing-function: ease;
   }

@@ -7,7 +7,6 @@ export const Section1Box = styled.div`
     padding: 160px 24px;
     min-height: 100%;
     box-sizing: border-box;
-    /* display: block; */
 `;
 
 export const Section1Box2 = styled.div`
@@ -22,7 +21,7 @@ export const Section1Box2 = styled.div`
     font-size: 46px;
     font-weight: bold; 
     line-height: 1.3;
-    color: #333d4b;
+    color: ${props => props.theme.colors.Grey800};
     margin: 0px;
     padding: 0px;
   }
@@ -31,7 +30,7 @@ export const Section1Box2 = styled.div`
     font-size: 24px;
     line-height: 1.6;
     font-weight: 600;
-    color: #4E5968;
+    color: ${props => props.theme.colors.Grey700};
     margin: 20px 0 0;
   }
 `;
@@ -126,11 +125,14 @@ export const TextContainer = styled.div`
     font-size: 17px;
     color: white;
     margin: 0px 0px 0px 30px;
-    color: #031228B3;
   }
 
-  .Text2{
-    
+  .BlackText {
+    color: #031228B3 !important;
+  }
+  
+  .WhiteText{
+    color: ${props => props.theme.colors.Grey100};
   }
 
   /* &:nth-child(2) span {

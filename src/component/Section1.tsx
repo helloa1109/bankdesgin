@@ -10,9 +10,7 @@ const Section1 = () => {
                     <span>누구나 마주할 투자의 모든 어려움, 토스증권이 바꿀게요</span>
                 </Section1_Text>   
             </Section1_Text_Wrapper>
-            <CoinWrappr>
-                {/* <span>텍스트를 테스트</span> */}
-            </CoinWrappr>
+            <CoinWrappr/>
         </Section1_Wrapper>
     );
 }

@@ -24,6 +24,13 @@ declare module "styled-components" {
             Grey800: string;
             Grey900: string;
             white50: string;
-          };
+          },
+          mediaSize: {
+            xs: string;
+            sm: string;
+            md: string;
+            lg: string;
+            xl: string;
+          }
     }
 }

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import coin from "../img/coin.png";
 
 export const Section1_Wrapper = styled.div`
     background-color: black;
@@ -6,9 +7,12 @@ export const Section1_Wrapper = styled.div`
     height: 100%;
     min-height: 100svh;
     position: relative;
-    padding: 120px 24px 160px;
+    padding-top: 120px;
+    /* padding: 120px 24px 160px; */
     overflow: hidden;
     margin-top: -68px;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const Section1_Text_Wrapper = styled.div`
@@ -50,9 +54,7 @@ export const CoinWrappr = styled.div`
   z-index: 1;
   width: 100%;
   height: 100%;
-
-  span {
-    color: white;
-    font-size: 50px;
-  }
+  background-image: url(${coin});
+  background-size: cover;
+  background-repeat: no-repeat;
 `;

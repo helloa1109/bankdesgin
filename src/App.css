@@ -1,4 +1,4 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -32,4 +32,4 @@ html, body {
 
 .box { 
   box-sizing: border-box;
-}
+} */

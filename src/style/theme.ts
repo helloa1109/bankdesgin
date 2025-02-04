@@ -28,12 +28,6 @@ const colors = {
     white50: "#FFFFFF",
 };
 
-export const darkTheme = {
-    color: "#000000",
-    bgColor: "#FFFFFF",
-    gray: "#343434",
-};
-
 const mediaSize = {
     xs: "screen and (max-width: '400px')",
     sm: "screen and (max-width: '640px')",
