@@ -15,33 +15,35 @@ const Section2 = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.mainitem',
-                start: 'top 80%',
-                end: 'bottom 60%',
+                start: 'top 90%',
+                end: 'bottom 70%',
                 scrub: 1,
-                markers: true,
+                once: true,
+                // markers: true,
             }
         });
 
         tl.fromTo(
             itemRef1.current,
-            { x: 100 },
-            { x: 0, duration: 3 }
+            { x: 100, opacity: 0 },
+            { x: 0, duration: 3 , opacity: 1}
         ).fromTo(
             itemRef2.current,
-            { x: 100 },
-            { x: 0, duration: 3 },
+            { x: 100, opacity: 0 },
+            { x: 0, duration: 3 , opacity: 1},
             "-=1.5"
         ).fromTo(
             itemRef3.current,
-            { x: 100 },
-            { x: 0, duration: 3 },
+            { x: 100, opacity: 0 },
+            { x: 0, duration: 3 , opacity: 1},
             "-=1.5"
         )
         window.addEventListener("resize", ScrollTrigger.update);
         // 컴포넌트 언마운트 시 리스너 제거 및 ScrollTrigger 정리
         return () => {
             window.removeEventListener("resize", ScrollTrigger.update);
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // 모든 ScrollTrigger 인스턴스 제거
+            // 모든 ScrollTrigger 인스턴스 제거
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill()); 
         };
 
     }, []);

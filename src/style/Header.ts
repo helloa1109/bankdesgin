@@ -1,4 +1,4 @@
-import styled , { css }from 'styled-components';
+import styled from 'styled-components';
 import background from "../img/toss.png";
 
 const flexCenter = `
@@ -18,20 +18,17 @@ export const Header_Wrapper = styled.div`
   top: 0;
   width: 100%;
   max-width: 100%;
+  background-color: hsla(0, 0%, 100%, .2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background-color: rgba(0,0,0, .3);
   ${flexCenter}
   justify-content: center;
   padding: 24px;
   box-sizing: border-box;
   z-index: 1;
   /* isolation: isolate; */
-
-  .blurback {
-    background-color: hsla(0, 0%, 100%, .2);
-  }
 `;
+
 
 // 헤더Nav
 export const Nav = styled.div`

@@ -8,9 +8,9 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
-:root {
-  --white-color-100: #fff;
-}
+ * {
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
 
 html, body {
   height: 100%;
@@ -33,7 +33,13 @@ html, body {
 .test {
   display: flex;
   isolation: isolate;
+  
 }
+
+
+.blurback {
+    background-color: rgba(0,0,0, .3);
+  }
 
 .flex {
   flex-direction: column;

@@ -3,7 +3,7 @@ import { Header_Wrapper, Nav, MenuItem, Logo, RightWrapper, LeftWrapper, InvestB
 
 const Section1_Header = () => {
   return (
-    <Header_Wrapper className='test blurback'>
+    <Header_Wrapper className='blurback test'>
       <Nav>
         <LeftWrapper>
           <Logo className='background' />
