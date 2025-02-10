@@ -19,7 +19,7 @@ const Section2 = () => {
                 end: 'bottom 70%',
                 scrub: 1,
                 once: true,
-                // markers: true,
+                markers: true,
             }
         });
 

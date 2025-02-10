@@ -60,33 +60,65 @@ export const Section3h = styled.div`
 `;
 
 export const ScrollWrapper = styled.div`
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* border: 4px solid yellow; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;
 
-export const ScrollImg1 = styled.div`
-    transform: scale(0.84, 0.84);
-    translate: none;
-    rotate: none;
-    scale: none;
-    height: 650px;
-    width: 300px;
-    
+export const ScrollGroup = styled.div`
+  transform: scale(0.84, 0.84);
+  translate: none;
+  rotate: none;
+  scale: none;
+  height: 650px;
+  width: 300px;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
 `;
 
 export const Scroll1 = styled.img`
-    z-index: 1;
-    color: transparent;
+  /* z-index: 1; */
+  color: transparent;
+  position: absolute;
+  width: 300px;
+  height: 720px;
+  stroke: #228be6;
+  stroke-width: 2;
+  stroke-opacity: 20%;
+  border-radius: 20px;
+  box-shadow: 0 0 200px rgb(34, 139, 230, 0.2);
+  overflow: hidden;
+  /* transform: rotateX(5deg) rotateY(5deg); */
+`;
+
+export const Scroll2 = styled.img`
+  color: transparent;
+  position: absolute;
+  /* opacity: 0; */
+  width: 300px;
+  height: 720px;
+  transform: translate(0px, 0px);
+  translate: none;
+  rotate: none;
+  scale: none;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+`;
+
+export const Section3Foot = styled.div`
     position: absolute;
-    width: 300px;
-    height: 650px;
-    stroke: #228be6;
-    stroke-width: 2;
-    stroke-opacity: 20%;
-    border-radius: 20px;
-    box-shadow: 0 0 200px rgb(34, 139, 230, .2);
-    overflow: hidden;
+    bottom: 0px;
+    z-index: 2;
+    opacity: 1;
+    width: 100%;
+    margin: 0px -24px;
+    height: 180px;
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    border-radius: 0px;
 `;

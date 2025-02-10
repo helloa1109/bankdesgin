@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
-import theme from './style/theme';
-import { GlobalStyle } from './global';
+import theme from './shared/theme';
+import { GlobalStyle } from './shared/global';
 ;
 
 const root = ReactDOM.createRoot(
